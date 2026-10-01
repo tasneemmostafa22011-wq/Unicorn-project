@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>unicorn</title>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        .unicorn {
+            font-size: 120px;
+            margin: 15px;
+            animation: move 2s infinite alternate;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-30px);
+            }
+        }
+        .btn{
+            margin: 10px;
+            border-radius: 20px;
+            font-size: 17px;
+        }
+        .magic-item{
+            background-color: white;
+            width: 180px;
+            height: 55px; 
+            border-radius: 15px; 
+            display: inline-block;
+            margin: 4px;
+        }
+        .magicitem{
+            background-color: white;
+            width: 270px;
+            height: 50px; 
+            border-radius: 15px; 
+            display: inline-block;
+            margin: 4px 4px 15px 4px;
+            box-shadow: 7px 7px 10px rgb(128, 128, 128 , 0.4);
+        }
+        #flower{
+            background-color: white;
+            width: 180px;
+            height: 60px; 
+            border-radius: 15px; 
+            display: inline-block;
+            font-size: 30px;
+            padding-top: 10px;
+            box-shadow: 7px 7px 10px grey;
+        }
+    </style>
+    <body style="background: linear-gradient(135deg, #ffaee4, #fcddf5);">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 text-center" style="background-color: white; border-radius: 20px; margin: 20px; padding: 15px; box-shadow: 15px 15px 20px pink;">
+                <h1 style="color: rgb(255, 155, 155); font-size: 50px; font-weight: 700;">🦄 Unicorn Magic World</h1>
+                <p style="color: gray; font-size: 18px;">Welcome Super Coder! 🎮 Try the magic buttons!</p>
+                <br><div class="unicorn">🦄</div>
+                <div class="well well-lg" style="background-color: rgb(221, 161, 221,0.5); color: white; border-radius: 30px; font-size: 30px;" id="massage">Hello Super Coder! ✨</div>
+                <div style="background-color: rgb(191, 229, 241,0.3); border-radius: 30px; padding: 20px;" class="text-center">
+                    <h2>✨ Magic Controls ✨</h2>
+                    <button class="btn btn-success" id="btn1">📝 Change Massage </button>
+                    <button class="btn btn-primary" id="btn2">🌟 Make Magic </button>
+                    <button class="btn btn-danger" id="btn3">🦄 Change link </button><hr>
+                    <button class="btn btn-default" id="btn4">➕ Add Star</button>
+                    <button class="btn btn-default" id="btn5">💕 Add Heart First</button>
+                    <button class="btn btn-default" id="btn6">⬆️ Add Before</button>
+                    <button class="btn btn-default" id="btn7">⬇️ Add After</button>
+                    <button class="btn btn-danger" id="btn8">🗑️ Remove Last</button>
+                </div><br>
+                <div style="background-color: rgb(191, 229, 241,0.3); border-radius: 30px; padding: 20px;" class="text-center" id="MagicGarden" class="magic">
+                    <div id="addflower">
+                        <h2>🌈 Magic Garden</h2>
+                        <div id="flower" class="Magic-item">🌸 Flower</div>
+                    </div>
+                </div>
+                <br><a href="https://www.google.com"><button class="btn btn-success" id="text">🔍 Visit Magic World</button></a><br><br>
+                <div style="background-color: rgb(220, 220, 220, 0.3); border-radius: 30px; padding: 20px; color: rgb(197, 132, 197); font-weight: 600;" class="text-center">
+                    <br><h3 style="font-weight: 600;">🧠 Super Coder Challenge🦄</h3>
+                    <p>Can you use all the magic buttons? 🥰</p>
+                    <p>⭐ Add 3 stars 💕 Add 2 hearts 🗑️ Then remove one!</p>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div><br><br>
+    </body>
+    <script src="Unicorn project.js"></script>
+</html>
